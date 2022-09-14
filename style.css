@@ -1,0 +1,57 @@
+g#nodes > g {
+    cursor: pointer; /* The hand cursor will show over group */
+}
+
+g#labels {
+    pointer-events: none; /* Interaction with labels is prevented */
+}
+
+#nodes g {
+    transition: 0.3s ease opacity;
+    cursor: pointer;
+}
+
+#labels text {
+    pointer-events: none; /* Prevents mouse events on the labels */
+}  
+
+h1 {
+    font-family: Josefin sans;
+    position: absolute;
+    margin-top: 2%;
+    margin-left: 1%;
+    color: white;
+    font-size: 30px;
+
+}
+
+/* classes */
+.sfondo {
+    background-color: black;
+    width: 100%;
+    height: fit-content;
+    position: absolute;
+}
+
+.gradient-sfondo {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    mix-blend-mode: screen;
+}
+
+.galaxy-sfondo {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    mix-blend-mode: screen;
+    opacity: 0%;
+}
+
+.container {
+    position: absolute;
+}
+
+.container-fluid {
+    width: 100%;
+}
