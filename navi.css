@@ -54,6 +54,7 @@ body {
     background-color: #f1f1f100;
     width: 30%;
     height: 300px;
+    top: 10vh;
   }
 
   .tab button {
@@ -72,7 +73,7 @@ body {
 
 /* Change background color of buttons on hover */
 .tab button:hover {
-    background-color: #ddd;
+    background-color: rgba(221, 221, 221, 0.658);
   }
   
   /* Create an active/current "tab button" class */
@@ -83,13 +84,15 @@ body {
 
 /* Style the tab content */
 .tabcontent {
-    position: relative;
+    position: absolute;
     float: right;
     padding: 0px 12px;
     border: 1px solid #ccc;
     width: 70%;
     border-left: none;
-    height: 300px;
+    right: 0px;
+    top: 0px;
+
   }
 
   /*IDS*/
