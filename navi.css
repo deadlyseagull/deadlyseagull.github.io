@@ -65,6 +65,7 @@ body {
     text-align: left;
     cursor: pointer;
     transition: 0.3s;
+    margin: 2%;
   }
   
 
@@ -91,27 +92,6 @@ body {
 
   }
 
-  /*IDS*/
-#Home {
-    background-color: rgba(112, 62, 62, 0.61);
-    border: 1px solid rgb(216, 216, 216);
-    border-radius: 10px;
-}
-#News {
-    background-color: green;
-    border: 1px solid rgb(216, 216, 216);
-    border-radius: 10px;
-}
-#Contact {
-    background-color: blue;
-    border: 1px solid rgb(216, 216, 216);
-    border-radius: 10px;
-}
-#About {
-    background-color: orange;
-    border: 1px solid rgb(216, 216, 216);
-    border-radius: 10px;
-}
 
 /* MENU*/
 .overlay {
