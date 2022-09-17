@@ -84,7 +84,7 @@ body {
 /* Style the tab content */
 .tabcontent {
     position: relative;
-    float: left;
+    float: right;
     padding: 0px 12px;
     border: 1px solid #ccc;
     width: 70%;
