@@ -50,11 +50,12 @@ body {
 .tab {
     position: relative;
     font-family: Major Mono Display;
-    background-color: inherit;
     float: left;
-    width: 100%;
+    border: 1px solid rgba(204, 204, 204, 0);
+    background-color: #323e4800;
+    width: 30%;
     height: 300px;
-    top: 5%;
+    top: 10vh;
     right: 1vh;
   }
 
@@ -90,12 +91,37 @@ body {
 .tabcontent {
     position: absolute;
     float: right;
-    width: 85%;
+    padding: 0px 12px;
+    border: 1px solid #ccc;
+    width: 70%;
     border-left: none;
-    left: 15%;
+    right: 0px;
+    top: 0px;
 
   }
-  
+
+  /*IDS*/
+#Home {
+    background-color: rgba(112, 62, 62, 0.61);
+    border: 1px solid rgb(216, 216, 216);
+    border-radius: 10px;
+}
+#News {
+    background-color: green;
+    border: 1px solid rgb(216, 216, 216);
+    border-radius: 10px;
+}
+#Contact {
+    background-color: blue;
+    border: 1px solid rgb(216, 216, 216);
+    border-radius: 10px;
+}
+#About {
+    background-color: orange;
+    border: 1px solid rgb(216, 216, 216);
+    border-radius: 10px;
+}
+
 /* MENU*/
 .overlay {
     /* Height & width depends on how you want to reveal the overlay (see JS below) */   
