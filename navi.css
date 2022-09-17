@@ -59,6 +59,7 @@ body {
 
   .tab button {
     display: block;
+    border: transparent;
     background-color: inherit;
     color: rgb(255, 255, 255);
     width: 10%;
@@ -86,10 +87,11 @@ body {
 /* Style the tab content */
 .tabcontent {
     position: absolute;
-    padding: 1% 15%;
-    top: 0%;
+    left: 15%;
+    top: 10%;
     color: white;
     overflow: auto;
+    height: initial;
   }
 
 
