@@ -51,9 +51,9 @@ body {
     position: absolute;
     font-family: Major Mono Display;
     background-color: transparent;
-    width: 100%;
-    height: 90%;
-    top: 10%;
+    width: 100vh;
+    height: 90vh;
+    top: 10vh;
     padding: 1%;
   }
 
