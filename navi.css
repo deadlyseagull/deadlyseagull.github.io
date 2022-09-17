@@ -87,11 +87,12 @@ body {
 /* Style the tab content */
 .tabcontent {
     position: absolute;
-    left: 20%;
+    left: 15%;
     top: 10%;
     color: white;
     overflow: auto;
     height: 85vh;
+    width: 80%;
   }
 
 
