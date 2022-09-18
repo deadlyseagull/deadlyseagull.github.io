@@ -80,25 +80,30 @@ body {
   }
 
   /*IDS*/
-  #Home {
-    background-color: rgba(112, 62, 62, 0.61);
+#Timoniere {
+    background-color: rgba(112, 62, 62, 0.60);
     border: 1px solid rgb(216, 216, 216);
     border-radius: 10px;
 }
-#News {
-    background-color: green;
+#PrimoUfficiale {
+    background-color: rgba(0, 128, 0, 0.60);
     border: 1px solid rgb(216, 216, 216);
     border-radius: 10px;
 }
-#Contact {
-    background-color: blue;
+#Nostromo {
+    background-color: rgba(0, 0, 255, 0.60);
     border: 1px solid rgb(216, 216, 216);
     border-radius: 10px;
 }
-#About {
-    background-color: orange;
+#Medico {
+    background-color: rgba(255, 166, 0, 0.60);
     border: 1px solid rgb(216, 216, 216);
     border-radius: 10px;
+}
+#Navigatore {
+  background-color: rgba(255, 0, 242, 0.60);
+  border: 1px solid rgb(216, 216, 216);
+  border-radius: 10px;
 }
 
 /* MENU*/
