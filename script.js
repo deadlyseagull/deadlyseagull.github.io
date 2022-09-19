@@ -68,6 +68,17 @@ function openNav() {
   }
   /*FINE MENU*/
 
+  /* INIZIO MENU PIANETA */
+function openSys(x) {
+  document.getElementById(x).style.width = "100%";
+}
+
+/* Close when someone clicks on the "x" symbol inside the overlay */
+function closeSys(x) {
+  document.getElementById(x).style.width = "0%";
+}
+/*FINE MENU PIANETA*/
+
 /*INIZIO ZOOM*/
  function zoom(event) {
       event.preventDefault();
