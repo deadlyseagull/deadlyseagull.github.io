@@ -69,13 +69,13 @@ function openNav() {
   /*FINE MENU*/
 
   /* INIZIO MENU PIANETA */
-function openSys(x) {
-  document.getElementById(x).style.width = "100%";
+function openSys(id) {
+  document.getElementById(id).style.display = "block";
 }
 
 /* Close when someone clicks on the "x" symbol inside the overlay */
 function closeSys(x) {
-  document.getElementById(x).style.width = "0%";
+  document.getElementById(id).style.display = "none";
 }
 /*FINE MENU PIANETA*/
 
