@@ -2,11 +2,10 @@
 <html lang="eng">
 
 <head>
-    <!--meta tags-->
+    <!--meta tags e Bootstrap CSS-->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!--Bootstrap CSS-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
@@ -18,6 +17,7 @@
 </head>
 
 <body>
+    <!-- Sezione Parallasse -->
     <div class="parallax">
         <!-- <img src="assets/galaxy.jpg" class="background-image">
             <img src="assets/overlay1.png" class="overlay1">
@@ -58,7 +58,9 @@
             <button class="button-edges">frontiere</button> -->
     </div>
 
-    <div id="primespace" onclick="closeSys(this.id)">
+    <!-- Fullscreen delle finestre aperte sul click di un pianeta-->
+
+    <div id="primespace" onClick="closeSys(this.id)">
         <div id="text">Overlay Text</div>
       </div>
 
