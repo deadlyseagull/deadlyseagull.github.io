@@ -26,6 +26,8 @@ g#planets > g {
 }
 
 
+
+
 /*Classes*/
 
 
@@ -120,6 +122,49 @@ g#planets > g {
     margin-top: 85vh;
     margin-left: 2%;
 }
+
+
+/*DESCRIZIONI OPAZI*/
+.opazio-text{
+  color: rgb(216, 216, 216);
+   position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 50px;
+  color: white;
+  transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  
+}
+
+.opazio-title {
+  font-family: Major Mono Display;
+  font-weight: 800;
+  font-size: 50px;
+}
+
+.opazio-body {
+  font-family: Josefin Sans;
+  font-size: 20px;
+  font-weight: 100;
+  padding: 1vh 0vh;
+}
+
+#primespace {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 2;
+  cursor: pointer;
+}
+
+/*Bottone filtro*/
 
 .label {
     color: rgb(216, 216, 216);
@@ -221,33 +266,5 @@ input[type="checkbox"] {
     }
   }
 
-  .overlay_text{
-    color: rgb(216, 216, 216);
-    font-family: Major Mono Display;
-    font-size: 20px;
-    
-  }
 
-  #primespace {
-    position: fixed;
-    display: none;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0,0,0,0.5);
-    z-index: 2;
-    cursor: pointer;
-  }
-  
-  #text{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    font-size: 50px;
-    color: white;
-    transform: translate(-50%,-50%);
-    -ms-transform: translate(-50%,-50%);
-  }
+ 
