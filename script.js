@@ -74,7 +74,7 @@ function openSys(id) {
 }
 
 /* Close when someone clicks on the "x" symbol inside the overlay */
-function closeSys(x) {
+function closeSys(id) {
   document.getElementById(id).style.display = "none";
 }
 /*FINE MENU PIANETA*/
