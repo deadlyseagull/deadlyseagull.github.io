@@ -91,6 +91,7 @@ function initZoom() {
   d3.select('svg')
     .call(zoom);
 }
+initZoom();
 
 /*INIZIO ZOOM
  function zoom(event) {
