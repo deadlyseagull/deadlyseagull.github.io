@@ -1,72 +1,86 @@
 <!DOCTYPE html>
 <html lang="eng">
-    <head>
-        <!--meta tags-->
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <!--Bootstrap CSS-->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin+Sans">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Major+Mono+Display">
+<head>
+    <!--meta tags e Bootstrap CSS-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Spelljammer Map</title>
-        <link rel="icon" type="image/x-icon" href="assets/icon.png">
-    </head>
-    <body>
-        <div class="parallax">    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin+Sans">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Major+Mono+Display">
+
+    <title>Spelljammer Map</title>
+    <link rel="icon" type="image/x-icon" href="assets/icon.png">
+</head>
+
+<body>
+    <!-- Sezione Parallasse -->
+    <div class="parallax">
         <!-- <img src="assets/galaxy.jpg" class="background-image">
             <img src="assets/overlay1.png" class="overlay1">
             <img src="assets/overlay2.jpg" class="overlay2"> -->
-        </div>
-            <img src="assets/gradient.png" class="background-gradient">
-
-            <!-- The overlay -->
-<div id="myNav" class="overlay">
-
-    <!-- Button to close the overlay navigation -->
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  
-    <!-- Overlay content -->
-    <div class="overlay-content">
-      <a href="index.html">Mappa</a>
-      <a href="#">spelljammer</a>
-      <a href="personaggi.html">equipaggio</a>
-      <a href="#">Appunti</a>
     </div>
-  
-  </div>        
-        <div class="root">      
+    <img src="assets/gradient.png" class="background-gradient">
+
+    <!-- The overlay -->
+    <div id="myNav" class="overlay">
+
+        <!-- Button to close the overlay navigation -->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+        <!-- Overlay content -->
+        <div class="overlay-content">
+            <a href="index.html">Mappa</a>
+            <a href="#">spelljammer</a>
+            <a href="navi.html">catalogo navi</a>
+            <a href="personaggi.html">equipaggio</a>
+            <a href="#">Appunti</a>
+        </div>
+
+    </div>
+    <div class="root">
         <div id="visualization-container" class="container-fluid">
         </div>
     </div>
-        <div class="navbar">
-            <h1 class="title1" onclick="openNav()">menu</h1>
-        </div>
-        <div class="selections">
-            <label class="label">
-                <input type="checkbox" class="checkboxOne" value="A" unchecked>Rotte e frontiere
-            </label>
-            <p class="p1">1 nodo = 100mln di miglia</p>
-            <!--<button class="button-groups">clusters</button>
+    <div class="navbar">
+        <h1 class="title1" onclick="openNav()">menu</h1>
+    </div>
+    <div class="selections">
+        <label class="label">
+            <input type="checkbox" class="checkboxOne" value="A" checked>Rotte e frontiere
+        </label>
+        <p class="p1">1 nodo = 100mln di miglia</p>
+        <!--<button class="button-groups">clusters</button>
             <button class="button-passages">Rotte</button>
             <button class="button-edges">frontiere</button> -->
-        </div>
+    </div>
 
-        
-    
+    <!-- Fullscreen delle finestre aperte sul click di un pianeta-->
 
-        <!--Javascript-->
-        <script src="https://d3js.org/d3.v7.min.js"></script>
-        
+    <div id="primespace" class="overlay_text" onClick="closeSys(this.id)">
+        <div>Overlay Text</div>
+      </div>
 
-      <!-- jQuery and Popper. They are required by Bootstrap, we discourage using jQuery -->
-      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-      <!-- Bootstrap -->
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-      <!-- Your js file -->
-      <script src="script.js"></script>
-    </body>
+    <!--Javascript-->
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+
+
+    <!-- jQuery and Popper. They are required by Bootstrap, we discourage using jQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <!-- Bootstrap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <!-- Your js file -->
+    <script src="script.js"></script>
+</body>
+
 </html>

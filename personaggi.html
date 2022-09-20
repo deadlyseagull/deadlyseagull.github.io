@@ -33,6 +33,7 @@
         <div class="overlay-content">
           <a href="index.html">Mappa</a>
           <a href="#">spelljammer</a>
+          <a href="navi.html">catalogo navi</a>
           <a href="personaggi.html">equipaggio</a>
           <a href="#">Appunti</a>
         </div>
@@ -42,30 +43,79 @@
                 <h1 class="title1" onclick="openNav()">menu</h1>
             </div>
             <div class="selection-menu">
-                <button class="tablink" onclick="openPage('Home', this, 'rgba(112, 62, 62, 0.61)')">Razit</button>
-                <button class="tablink" onclick="openPage('News', this, 'green')" id="defaultOpen">tipo1</button>
-                <button class="tablink" onclick="openPage('Contact', this, 'blue')">tipo2</button>
-                <button class="tablink" onclick="openPage('About', this, 'orange')">tipo3</button>
-                <button class="tablink" onclick="openPage('About', this, 'orange')">tipo4</button>
-                <div id="Home" class="tabcontent">
-                    <h3>Home</h3>
-                    <p>Home is where the heart is..</p>
+                <button class="tablink" onclick="openPage('Timoniere', this, 'rgba(112, 62, 62, 0.60)')">Timoniere</button>
+                <button class="tablink" onclick="openPage('PrimoUfficiale', this, 'rgba(74, 119, 74, 0.6)')" id="defaultOpen">Primo Ufficiale</button>
+                <button class="tablink" onclick="openPage('Nostromo', this, 'rgba(66, 66, 112, 0.6)')">Nostromo</button>
+                <button class="tablink" onclick="openPage('Medico', this, 'rgba(119, 101, 68, 0.6)')">Medico</button>
+                <button class="tablink" onclick="openPage('Navigatore', this, 'rgba(100, 61, 98, 0.6);')">Navigatore</button>
+                <div id="Timoniere" class="tabcontent">
+                  <p>Il Timoniere è il colui che siede sullo Spelljamming Helm e lo comanda per guidare la nave nello spazio. Senza di lui, la nave non può muoversi. Mentre è seduto sul trono e al comando della nave, il corpo del timoniere è considerato unconscious. Per usare lo Spelljamming Helm è richiesto di avere almeno uno spell slot, e scenderne consuma tutti gli spell slot rimanenti.Durante un combattimento, la nave condivide l'iniziativa del Timoniere, e il Timoniere controlla le azioni che la nave prende: queste azioni non contano verso quelle del Timoniere in sè.</p>
+                  <h5>azioni aggiuntive</h5>
+                  <p>Quando seduto sullo spelljamming helm, il timoniere può prendere le seguenti azioni aggiunitive durante il suo turno</p>
+                  <dl>
+                    <dt>utilizzo energia arcana</dt>
+                    <dd>come azione, il Timoniere spende un'azione per consumare uno spell slot e attivare o gli scudi (bonus alla AC della nave di 3 + livello della spell slot consumata), o i propulsori (la velocità della nave aumenta di 20 piedi per livello dello spell slot consumato)</dd>
+                    <dt>difesa della nave</dt>
+                    <dd>come azione il Timoniere può costringere una creatura sulla nave che sta pilotando a passare un Wisdom saving throw o prendere 1d6 danni psichici e avere svantaggio sul prossimo saving throw che dovrà fare entro la fine del suo prossimo turno</dd>
+                    <dt>casting di una spell</dt>
+                    <dd>poichè il Timoniere mentre pilota la nave può vedere come se fosse in piedi in qualsiasi punto a sua scelta su di essa, può usare spell che abbiano un casting time di un'azione, non richiedano componenti somatiche e non richiedano concentrazione.</dd>
+                  </dl>
                   </div>
                   
-                  <div id="News" class="tabcontent">
-                    <h3>News</h3>
-                    <p>Some news this fine day!</p>
+                  <div id="PrimoUfficiale" class="tabcontent">
+                    <p>il primo ufficale è colui che si occupa di comandare e motivare la ciurma</p>
+                    <h5>azioni aggiuntive</h5>
+                    <p>quando il primo ufficiale è sulla sua nave, può prendere le seguenti azioni</p>
+                    <dl>
+                      <dt>motiva la ciurma</dt>
+                      <dd>come azione, il primo ufficiale può guadagnare un dado di motivazione (vedi la classe bardo per il funzionamento del dado d'ispirazione), il cui valore scala seguendo il suo livello secondo la tabella del bardo. il primo ufficiale può poi applicare questo risultato a un qualsiasi check o della nave o della ciurma. il primo ufficiale può avere un solo dado motivazione alla volta.</dd>
+                      <dt>avanti tutta!</dt>
+                      <dd>fino all'inizio del prossimo turno della nave, il primo ufficiale può aumentarne la velocità di 1d6 * 5 piedi.</dd>
+                      <dt>aggiustare il tiro</dt>
+                      <dd>il primo ufficale può dare vantaggio al prossimo attack roll di un'arma della nave entro 10 piedi da lui. questo effetto non è sommabile.</dd>
+                    </dl>
                   </div>
                   
-                  <div id="Contact" class="tabcontent">
-                    <h3>Contact</h3>
-                    <p>Get in touch, or swing by for a cup of coffee.</p>
+                  <div id="Nostromo" class="tabcontent">
+                    <p>il nostromo è colui che tiene la nave operativa e funzionante</p>
+                    <h5>azioni aggiuntive</h5>
+                    <p>quando il nostromo è sulla sua nave, può prendere le seguenti azioni</p>
+                    <dl>
+                      <dt>riparazioni d'emergenza</dt>
+                      <dd>come azione, il nostromo può velocemente aggiustare la nave, garantendole 2d10 hit point temporanei</dd>
+                      <dt>pronti all'impatto</dt>
+                      <dd>come azione, il nostromo può preparare la nave a un impatto imminente: fino all'inizio del suo prossimo turno, il nostromo può ridurre i danni ricevuti da uno scontro di 2d10</dd>
+                      <dt>cambia le vele</dt>
+                      <dd>il nostromo come azione può cambiare la posizione delle vele, scegliendo fra veloce (+15 feet alla velocità, -45 alla manovrabilità), normale (nessun bonus o malus) o di curvatura (-15 feet, +45 alla manovrabilità)</dd>
+                    </dl>
                   </div>
                   
-                  <div id="About" class="tabcontent">
-                    <h3>About</h3>
-                    <p>Who we are and what we do.</p>
+                  <div id="Navigatore" class="tabcontent">
+                    <p>il navigatore si occupa di tracciare le rotte ed evitare pericoli nella navigazione</p>
+                    <h5>azioni aggiuntive</h5>
+                    <p>quando il navigatore è sulla sua nave, può prendere le seguenti azioni</p>
+                    <dl>
+                      <dt>coordina</dt>
+                      <dd>come azione, il navigatore sceglie una creatura entro 60 da esso e le da una singola azione da usare immediatamente</dd>
+                      <dt>prendere l'iniziativa</dt>
+                      <dd>se durante un round il navigatore non ha svolto ancora il suo turno, può usare la sua azione e movimento quando preferisce immediatamente dopo la fine del turno di un'altra creatura. dopo aver utilizzato questa abilità, il navigatore non può più svolgere il suo turno fino alla fine del round corrente</dd>
+                      <dt>aggiustare il tiro</dt>
+                      <dd>il primo ufficale può dare vantaggio al prossimo attack roll di un'arma della nave entro 10 piedi da lui. questo effetto non è sommabile.</dd>
+                    </dl>
                   </div>
+
+                  <div id="Medico" class="tabcontent">
+                    <p>il medico si occupa di medicina</p>
+                    <h5>azioni aggiuntive</h5>
+                    <p>quando il medico è sulla sua nave, può prendere le seguenti azioni</p>
+                    <dl>
+                      <dt>aiuta i feriti</dt>
+                      <dd>come azione, il medico riporta in vita 1d4 membri della ciurma che non siano PC o NPC caratteristici con 4 hit point</dd>
+                      <dt>aiuta gli ufficiali</dt>
+                      <dd>come azione, il medico può stabilizzare una creatura morente entro 5 feet da di lui. se la creatura è viva, il medico può usare la sua azione per darle un numero di temporary hit points equivalente a (livello del medico)d4.</dd>
+                      <dt>cura da veleno</dt>
+                      <dd>il medico può usare la sua azione per eliminare la poisoned condition da una creatura che può toccare.</dd>
+                    </dl>
             </div>
             
 
