@@ -221,6 +221,12 @@ input[type="checkbox"] {
     }
   }
 
+  .overlay_text{
+    color: rgb(216, 216, 216);
+    font-family: Major Mono Display;
+    font-size: 20px;
+    
+  }
 
   #primespace {
     position: fixed;
